@@ -1,0 +1,27 @@
+name: MFG-Gravestones
+main: xyz.bluspring.mfg.gravestones.Init
+version: 1.7-SNAPSHOT
+api-version: '1.18'
+author: BluSpring
+commands:
+  recover-gravestone:
+    description: Recovers any lost gravestones.
+    aliases:
+      - rg
+      - recover
+    usage: "§cGravestones §a>> §cInvalid usage! Usage: §e/recover-gravestone"
+    permission: gravestonesmfg.commands
+  #locate-gravestone:
+    #description: Locates gravestones.
+    #aliases:
+    #  - locategr
+    #usage: "§cGravestones §a>> §cInvalid usage! Usage: §e/locate-gravestone [username]"
+    #permission: gravestonesmfg.commands
+
+permissions:
+  gravestonesmfg.allow-graves:
+    default: true
+    description: Allows gravestones to work for users.
+  gravestonesmfg.commands:
+    default: op
+    description: Enables plugin commands.
